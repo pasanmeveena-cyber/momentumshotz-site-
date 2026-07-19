@@ -4,47 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — MomentumShotz</title>
-<style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 680px; margin: 3rem auto; padding: 0 1.5rem; line-height: 1.6; color: #1a1a1a; }
-  h1 { font-size: 1.6rem; }
-  h2 { font-size: 1.1rem; margin-top: 2rem; }
-  a { color: #1152c4; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: 2026-07-20</p>
+  <header>
+    <a class="brand" href="index.html"><span class="dot"></span>MomentumShotz</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html" class="active">Privacy</a>
+    </nav>
+  </header>
 
-  <p>MomentumShotz is operated by a single individual and is not a
-  multi-user service. It does not collect data from, or about, the
-  general public.</p>
+  <main>
+    <div class="card">
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 2026-07-20</p>
 
-  <h2>What data is accessed</h2>
-  <p>The tool uses OAuth 2.0 to connect to the operator's own YouTube and
-  TikTok accounts. It stores, locally and in encrypted CI secrets it
-  controls, only the access/refresh tokens needed to publish video content
-  to those accounts on the operator's behalf, plus basic public creator
-  profile fields (such as display name) returned by the TikTok Content
-  Posting API's Query Creator Info endpoint, used solely to confirm which
-  account a post is about to be published to before publishing.</p>
+      <p>MomentumShotz is operated by a single individual and is not a
+      multi-user service. It does not collect data from, or about, the
+      general public.</p>
 
-  <h2>What data is not collected</h2>
-  <p>The tool does not collect data about TikTok or YouTube viewers,
-  followers, or any third party. It does not sell, share, or transfer any
-  data to any third party. It is not used to log in, authenticate, or
-  identify any user other than the operator's own connected accounts.</p>
+      <h2>What data is accessed</h2>
+      <p>The tool uses OAuth 2.0 to connect to the operator's own YouTube and
+      TikTok accounts. It stores, locally and in encrypted CI secrets it
+      controls, only the access/refresh tokens needed to publish video content
+      to those accounts on the operator's behalf, plus basic public creator
+      profile fields (such as display name) returned by the TikTok Content
+      Posting API's Query Creator Info endpoint, used solely to confirm which
+      account a post is about to be published to before publishing.</p>
 
-  <h2>Data retention</h2>
-  <p>OAuth tokens are retained only as long as needed to operate the
-  pipeline and are stored in gitignored local files or the operator's own
-  CI secret store. Deleting the connected app's authorization from a
-  YouTube or TikTok account's settings revokes the tool's access
-  immediately.</p>
+      <h2>What data is not collected</h2>
+      <p>The tool does not collect data about TikTok or YouTube viewers,
+      followers, or any third party. It does not sell, share, or transfer any
+      data to any third party. It is not used to log in, authenticate, or
+      identify any user other than the operator's own connected accounts.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy, or requests to review or delete stored
-  data: <a href="mailto:piushapasan@gmail.com">piushapasan@gmail.com</a></p>
+      <h2>Data retention</h2>
+      <p>OAuth tokens are retained only as long as needed to operate the
+      pipeline and are stored in gitignored local files or the operator's own
+      CI secret store. Deleting the connected app's authorization from a
+      YouTube or TikTok account's settings revokes the tool's access
+      immediately.</p>
 
-  <p><a href="index.html">&larr; Back</a></p>
+      <h2>Contact</h2>
+      <p>Questions about this policy, or requests to review or delete stored
+      data: <a href="mailto:pasanmeveena@gmail.com">pasanmeveena@gmail.com</a></p>
+
+      <a class="back" href="index.html">&larr; Back to home</a>
+    </div>
+  </main>
+
+  <footer>
+    Contact: <a href="mailto:pasanmeveena@gmail.com">pasanmeveena@gmail.com</a>
+  </footer>
 </body>
 </html>
