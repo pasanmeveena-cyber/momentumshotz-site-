@@ -28,25 +28,22 @@
 
       <h2>What data is accessed</h2>
       <p>The tool uses OAuth 2.0 to connect to the operator's own YouTube and
-      TikTok accounts. It stores, locally and in encrypted CI secrets it
-      controls, only the access/refresh tokens needed to publish video content
-      to those accounts on the operator's behalf, plus basic public creator
-      profile fields (such as display name) returned by the TikTok Content
-      Posting API's Query Creator Info endpoint, used solely to confirm which
-      account a post is about to be published to before publishing.</p>
+      TikTok accounts. It accesses only what's needed to publish video
+      content to those connected accounts on the operator's behalf, plus
+      basic public creator profile information (such as display name) used
+      to confirm which account a post is about to go to before publishing.
+      Access credentials are kept private and are never shared, sold, or
+      transferred to any third party.</p>
 
       <h2>What data is not collected</h2>
       <p>The tool does not collect data about TikTok or YouTube viewers,
-      followers, or any third party. It does not sell, share, or transfer any
-      data to any third party. It is not used to log in, authenticate, or
-      identify any user other than the operator's own connected accounts.</p>
+      followers, or any third party. It is not used to log in, authenticate,
+      or identify any user other than the operator's own connected accounts.</p>
 
       <h2>Data retention</h2>
-      <p>OAuth tokens are retained only as long as needed to operate the
-      pipeline and are stored in gitignored local files or the operator's own
-      CI secret store. Deleting the connected app's authorization from a
-      YouTube or TikTok account's settings revokes the tool's access
-      immediately.</p>
+      <p>Access is retained only as long as needed to operate the pipeline.
+      Revoking the connected app's authorization from a YouTube or TikTok
+      account's settings cuts off the tool's access immediately.</p>
 
       <h2>Contact</h2>
       <p>Questions about this policy, or requests to review or delete stored
